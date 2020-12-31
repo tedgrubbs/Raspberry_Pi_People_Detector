@@ -1,5 +1,10 @@
 Little Brother - A Raspberry Pi Security camera
 
+“Big Brother is Watching You.”
+― George Orwell, 1984
+
+It's like Big Brother but little because it's a Raspberry Pi. :D
+
 DISCLAIMER: This project is only for fun and should not be used as a real security device. USE AT YOUR OWN RISK.
 
 To use please follow Evan Juras's tutorial on downloading the necessary packages for the Object Detection API and Open CV: https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/blob/master/README.md
