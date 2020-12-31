@@ -1,0 +1,4 @@
+*.json
+*.png
+ssdlite*
+__pycache__
