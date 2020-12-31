@@ -2,3 +2,4 @@
 *.png
 ssdlite*
 __pycache__
+error_backlog
