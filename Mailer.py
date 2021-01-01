@@ -22,6 +22,7 @@ class Mailer:
         self.port = 465  # For SSL
         self.sender_email = config['sender_email']  # Enter your address
         self.receiver_email = config['receiver_email']  # Enter receiver address
+        self.cc = config['cc']
         self.password = config['password']
         self.error_times = []
         self.wait_time = 10
@@ -36,6 +37,7 @@ class Mailer:
         self.message = MIMEMultipart()
         self.message["From"] = self.sender_email
         self.message["To"] = self.receiver_email
+        self.message["Cc"] = self.cc
         self.message["Subject"] = subject
         self.message.attach(MIMEText(body, "plain"))
 
@@ -68,7 +70,7 @@ class Mailer:
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.gmail.com", self.port, context=context) as server:
             server.login(self.sender_email, self.password)
-            server.sendmail(self.sender_email, self.receiver_email, text)
+            server.sendmail(self.sender_email, [self.receiver_email] + [self.cc], text)
 
     def send_alert(self, images):
 

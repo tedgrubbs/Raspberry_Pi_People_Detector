@@ -1,5 +1,6 @@
 {
   "sender_email": "<your email>@gmail.com",
   "receiver_email": "<your receiving email>@gmail.com",
+  "cc": "<your cc'd emails>@gmail.com",
   "password": "<your password>"
 }
