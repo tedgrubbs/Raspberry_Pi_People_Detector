@@ -1,5 +1,6 @@
 *.json
 *.png
+*.txt
 ssdlite*
 __pycache__
 error_backlog

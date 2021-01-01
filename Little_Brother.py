@@ -88,7 +88,7 @@ try:
     camera = cv2.VideoCapture(0)
     ret = camera.set(3,IM_WIDTH)
     ret = camera.set(4,IM_HEIGHT)
-    wait_time = 10.
+    wait_time = 10. # seconds to wait after a detection is made. Keeps it from taking multiple images of same event.
     timer = timeit.default_timer() - wait_time
     num_pics = 3
 
