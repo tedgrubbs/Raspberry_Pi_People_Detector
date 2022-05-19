@@ -1,9 +1,4 @@
-Little Brother - A Raspberry Pi Security camera
-
-“Big Brother is Watching You.”
-― George Orwell, 1984
-
-It's like Big Brother but little because it's a Raspberry Pi. :D
+A simple program that uses a Raspberry PI to detect people and notify the user via email
 
 DISCLAIMER: This project is only for fun and should not be used as a real security device. USE AT YOUR OWN RISK.
 
